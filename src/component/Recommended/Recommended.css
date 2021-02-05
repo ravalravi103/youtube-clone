@@ -1,6 +1,7 @@
 .video__card {
    width :320px;
    height:280px;
+   padding:10px
 }
 .video__card-image{
     width :320px;
