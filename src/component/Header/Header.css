@@ -1,0 +1,43 @@
+.header {
+    display : flex;
+    align-items : center;
+    justify-content:space-between;
+    padding : 10px;
+    background-color: #fafafa;
+    position: sticky;
+    top: 0;
+    z-index:100
+}
+
+/* left */
+.header__left{
+    display : flex;
+    align-items : center
+}
+.header__logo{margin-left: 10px; height :50px}
+
+/* center */
+.header__input{
+    display: flex;
+    align-items : center;
+    border : 1px solid #000;
+    width : 40%
+}
+.header__input > input {
+    flex : 1;
+    height: 20px;
+    /* border: 1px solid #000 */
+    
+}
+.header__input-btn{
+    width :50px  !important;
+    background-color:  #fafafa;
+    border-left:  1px solid lightgray;
+}
+/* Right */
+.header__icon{
+    display: flex;
+    align-items : center;
+    justify-content: space-evenly;
+    width : 200px
+}
