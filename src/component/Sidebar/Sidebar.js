@@ -8,19 +8,20 @@ import HistorySharpIcon from '@material-ui/icons/HistorySharp';
 import VideocamIcon from '@material-ui/icons/Videocam';
 import HdIcon from '@material-ui/icons/Hd';
 import QueryBuilderIcon from '@material-ui/icons/QueryBuilder';
+import {BrowserRouter as Router,Link} from "react-router-dom";
 import './Sidebar.css';
 
 function Sidebar() {
     return (
         <div className="sidebar">
-            <SidebarMenu title="Home" Icon={HomeIcon}/>
-            <SidebarMenu title="Tranding" Icon={WhatshotSharpIcon}/>
-            <SidebarMenu title="Subscription" Icon={SubscriptionsSharpIcon}/>
-            <SidebarMenu title="Library" Icon={VideoLibrarySharpIcon}/>
-            <SidebarMenu title="History" Icon={HistorySharpIcon}/>
-            <SidebarMenu title="Your Video" Icon={VideocamIcon}/>
-            <SidebarMenu title="Your Movies" Icon={HdIcon}/>
-            <SidebarMenu title="Watch Later" Icon={QueryBuilderIcon}/>
+            <Link to='/' exact><SidebarMenu title="Home" Icon={HomeIcon}/></Link>
+             <Link to='/tranding'><SidebarMenu title="Tranding" Icon={WhatshotSharpIcon}/></Link>
+             <Link to='/subscription'><SidebarMenu title="Subscription" Icon={SubscriptionsSharpIcon}/></Link>
+             <Link to='/library'><SidebarMenu title="Library" Icon={VideoLibrarySharpIcon}/></Link>
+             <Link to='/history'><SidebarMenu title="History" Icon={HistorySharpIcon}/></Link>
+             <Link to='/yourVideo'><SidebarMenu title="Your Video" Icon={VideocamIcon}/></Link>
+             <Link to='/yourMovies'><SidebarMenu title="Your Movies" Icon={HdIcon}/></Link>
+             <Link to='/watchLater'><SidebarMenu title="Watch Later" Icon={QueryBuilderIcon}/></Link>
         </div>
     )
 }

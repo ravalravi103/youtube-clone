@@ -1,0 +1,16 @@
+.tranding_video_card{
+    display:flex;
+    width: 70%;
+    height: 180px
+}
+.video__details{
+    margin-left: 20px;
+}
+
+.video__details-basic{
+    display:flex;
+}
+.channelName{margin-right: 10px;}
+.videoViews {margin-right: 10px;}
+.video__details-basic{margin-bottom: 10px;}
+.videoDesc{line-height:'80%'}
