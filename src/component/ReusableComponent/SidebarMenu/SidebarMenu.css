@@ -1,0 +1,15 @@
+.sidebarMenu{
+    display :flex;
+    padding:7px;
+    justify-content: center;
+}
+.sidebarMenu:hover{
+    background-color:lightgray;
+}
+.sidebarMenu:hover > .sidebarMenu__icon {color: red;} 
+.sidebarMenu:hover > .sidebarMenu__text {color: #000;font-weight: bold;} 
+.sidebarMenu__text{
+  flex:.8;
+  justify-content: center;
+  margin-left: 20px;
+}

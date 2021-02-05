@@ -1,7 +1,7 @@
 import './App.css';
 import Header from './component/Header/Header';
 import Sidebar from './component/Sidebar/Sidebar';
-import Recommended from './component/Recommended/Recommended';
+import RecommendedList from './component/Recommended/RecommendedList';
 
 function App() {
   return (
@@ -9,7 +9,7 @@ function App() {
         <Header />
          <div className="body">
             <Sidebar/>
-            <Recommended />
+            <RecommendedList />
          </div>
     </div>
   );
